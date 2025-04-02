@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - El Sabroso</title>
+    <link rel="stylesheet" href="styles/mejora.css">
+    <style>
+        /* Estilos adicionales para mejorar el diseño del contacto */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #d32f2f;
+            color: #fff;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .contact-info div {
+            margin: 10px;
+            text-align: center;
+        }
+        .contact-info i {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #d32f2f;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu-comida.html">Menú de Comida</a></li>
+                <li><a href="menu-bebidas.html">Menú de Bebidas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <!-- Información de Contacto -->
+            <section class="contact-info">
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>correo@elsabroso.com</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+52 55 1234 5678</p>
+                </div>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Facultad+de+Contadur%C3%ADa+P%C3%BAblica+y+Administraci%C3%B3n+UNL" target="_blank">
+                            Ver ubicación en Google Maps
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Formulario de Contacto -->
+            <section class="contacto">
+                <h2>Formulario de Contacto</h2>
+                <form id="contactForm">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Puesto de Tacos "El Sabroso". Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Se recomienda incluir FontAwesome para los íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Nuevos estilos para menús mejorados */
+.menu-category {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff5e6;
+    border-radius: 15px;
+}
+
+.menu-item {
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #ff8c42;
+    background: white;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.description {
+    color: #666;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.badge {
+    background: #ff8c42;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.drink-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.drink-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.drink-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff8c42;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
